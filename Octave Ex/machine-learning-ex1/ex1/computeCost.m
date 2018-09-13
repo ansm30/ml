@@ -18,7 +18,6 @@ J = 0;
 predictions = X*theta;
 #size(predictions - y)
 errors = (predictions - y).^2;
-errors
 J = (1/(2*m)) * sum(errors);
 
 
