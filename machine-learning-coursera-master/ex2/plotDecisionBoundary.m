@@ -38,10 +38,11 @@ else
         end
     end
     z = z'; % important to transpose z before calling contour
-
+    z(1,1)
     % Plot z = 0
     % Notice you need to specify the range [0, 0]
     contour(u, v, z, [0, 0], 'LineWidth', 2)
+    
 end
 hold off
 
