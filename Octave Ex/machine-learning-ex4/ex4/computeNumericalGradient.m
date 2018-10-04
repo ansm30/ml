@@ -21,9 +21,13 @@ for p = 1:numel(theta)
     perturb(p) = e;
     loss1 = J(theta - perturb);
     loss2 = J(theta + perturb);
+    
     % Compute Numerical Gradient
     numgrad(p) = (loss2 - loss1) / (2*e);
     perturb(p) = 0;
 end
 
 end
+
+
+J = [112, []]
