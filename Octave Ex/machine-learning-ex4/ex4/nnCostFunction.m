@@ -72,11 +72,14 @@ a1 = [ones(m,1) a1];
 z2= a1 * Theta2';
 
 h= sigmoid(z2);
+size(h)
 
 for k=1:num_labels
+  
     yk = y==k;
     J= J - (1/m) * sum(yk.*log(h(:,k))+(1-yk).*log(1-h(:,k)));
-   
+    #k
+    #size(h(:,k))   
 end
 
 rtheta1 = sum(sum(Theta1(:,2:end).^2));
