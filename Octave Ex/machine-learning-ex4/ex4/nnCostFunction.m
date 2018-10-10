@@ -72,7 +72,7 @@ a1 = [ones(m,1) a1];
 z2= a1 * Theta2';
 
 h= sigmoid(z2);
-size(h)
+#size(h)
 
 for k=1:num_labels
   
